@@ -1177,6 +1177,16 @@ public class Bot extends TelegramLongPollingBot {
             .keyboardRow(List.of(back))
             .build();
 
+//    @Override
+//    public String getBotUsername() {
+//        return "@ogar_study_java_tg_bot";
+//    }
+//
+//    @Override
+//    public String getBotToken() {
+//        return "7538872645:AAE-Mm6MFvLB5mMOsq0q_zcwMy8nJQrv-zs";
+//    }
+
     @Override
     public String getBotUsername() {
         return "@study_ogar_tg_bot";
@@ -1186,6 +1196,7 @@ public class Bot extends TelegramLongPollingBot {
     public String getBotToken() {
         return "6555564889:AAHYOcRgwqmbg-iUK8-L4y3KLoxgCIJ1b-0";
     }
+
 
     @Override
     public void onUpdateReceived(Update update) {
@@ -2188,7 +2199,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("примитивы и объекты")) {
                 editMessageText.setText("Примитивы и объекты");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа по Примитивам.pdf");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Примитивы и объекты.pdf");
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -2252,6 +2263,80 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("числа и даты")) {
                 editMessageText.setText("Числа и даты");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleEight);
+            } else if (data.equals("операции с числами")) {
+                editMessageText.setText("Операции с числами");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Операции с числами.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("инкремент и декремент")) {
+                editMessageText.setText("Инкремент и декремент");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Инкремент и декремент.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("преобразование(приведение) чисел")) {
+                editMessageText.setText("Преобразование (приведение) чисел");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Преобразование (приведение).pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("точность вычислений")) {
+                editMessageText.setText("Точность вычислений");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Точность вычислений.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("работа с б и т числами")) {
+                editMessageText.setText("Работа с большими и точными числами");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Работа с большими и точными числами.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("дата и время")) {
+                editMessageText.setText("Дата и время");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Дата и время.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("timestamp")) {
+                editMessageText.setText("Метка времени (timestamp)");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Метка времени (timestamp).pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Числа и даты")) {
+                editMessageText.setText("Практическая работа по Числа и даты");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа по Числа и даты.docx");
+
+                    execute(sendDocument);
+                }
+                catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("строки")) {
                 editMessageText.setText("Строки");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleNine);
