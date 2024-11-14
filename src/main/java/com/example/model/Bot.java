@@ -1993,7 +1993,7 @@ public class Bot extends TelegramLongPollingBot {
 
                     //Ниже раскомментировать при работе с БД
                     //sendDocument.setDocument(new InputFile(new File("Практическая работа по Методы и классы(get DB).pdf")));
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа по Методы и классы(get DB).pdf");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа по Методы и классы.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
