@@ -1177,25 +1177,25 @@ public class Bot extends TelegramLongPollingBot {
             .keyboardRow(List.of(back))
             .build();
 
-//    @Override
-//    public String getBotUsername() {
-//        return "@ogar_study_java_tg_bot";
-//    }
-//
-//    @Override
-//    public String getBotToken() {
-//        return "7538872645:AAE-Mm6MFvLB5mMOsq0q_zcwMy8nJQrv-zs";
-//    }
-
     @Override
     public String getBotUsername() {
-        return "@study_ogar_tg_bot";
+        return "@ogar_study_java_tg_bot";
     }
 
     @Override
     public String getBotToken() {
-        return "6555564889:AAHYOcRgwqmbg-iUK8-L4y3KLoxgCIJ1b-0";
+        return "7538872645:AAE-Mm6MFvLB5mMOsq0q_zcwMy8nJQrv-zs";
     }
+
+//    @Override
+//    public String getBotUsername() {
+//        return "@study_ogar_tg_bot";
+//    }
+//
+//    @Override
+//    public String getBotToken() {
+//        return "6555564889:AAHYOcRgwqmbg-iUK8-L4y3KLoxgCIJ1b-0";
+//    }
 
 
     @Override
@@ -1496,7 +1496,7 @@ public class Bot extends TelegramLongPollingBot {
 //                    FileOutputStream fileOutputStream = new FileOutputStream("Приоритеты и скобки в условиях(get DB).pdf");
 //                    fileOutputStream.write(getMaterialForCourse.getFileData());
 
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Приоритеты и скобки в условиях(get DB).pdf");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Приоритеты и скобки в условиях(getDB).pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
