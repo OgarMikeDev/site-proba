@@ -2340,6 +2340,69 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("строки")) {
                 editMessageText.setText("Строки");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleNine);
+            } else if (data.equals("строки, к и с")) {
+                editMessageText.setText("Строки, конкатенация и сравнение");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект Строки, конкатенация и сравнение.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("преобразование ч в с и о")) {
+                editMessageText.setText("Преобразование чисел в строки и обратно");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект Преобразование чисел в строки и обратно.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("символы и кодировки")) {
+                editMessageText.setText("Символы и кодировки");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Символы и кодировки.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("методы работы с подс")) {
+                editMessageText.setText("Методы работы с подстроками");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект Методы работы с подстроками.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("string Pool")) {
+                editMessageText.setText("String Pool");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. String Pool.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("регулярные выражения")) {
+                editMessageText.setText("Регулярные выражения");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Регулярные выражения.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Строки")) {
+                editMessageText.setText("Практическая работа");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа по Строки.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("массивы и списки")) {
                 editMessageText.setText("Массивы и списки");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTen);
