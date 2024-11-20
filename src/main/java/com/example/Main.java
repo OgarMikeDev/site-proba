@@ -9,6 +9,6 @@ public class Main {
     public static void main(String[] args) throws TelegramApiException {
         TelegramBotsApi telegramBotsApi = new TelegramBotsApi(DefaultBotSession.class);
         Bot bot = new Bot();
-        telegramBotsApi.registerBot(bot);
+        telegramBotsApi.registerBot(bot);//Ybrbbnf
     }
 }
