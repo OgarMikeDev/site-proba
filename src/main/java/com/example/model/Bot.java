@@ -434,7 +434,6 @@ public class Bot extends TelegramLongPollingBot {
             .text("Коллекция HashSet")
             .callbackData("коллекция HashSet")
             .build();
-
     public InlineKeyboardButton mechanismWorkHashSet = InlineKeyboardButton.builder()
             .text("Механизм работы HashSet")
             .callbackData("м р HashSet")
@@ -2394,7 +2393,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Строки")) {
-                editMessageText.setText("Практическая работа");
+                editMessageText.setText("Практическая работа по Строкам");
                 try {
 
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа по Строки.docx");
@@ -2406,9 +2405,134 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("массивы и списки")) {
                 editMessageText.setText("Массивы и списки");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTen);
+            } else if (data.equals("создание массивов")) {
+                editMessageText.setText("Создание массивов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Создание массивов.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("работа с м в циклах")) {
+                editMessageText.setText("Работа с массивами в циклах");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Работа с массивами в циклах.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("многомерные массивы")) {
+                editMessageText.setText("Многомерные массивы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Многомерные массивы.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("класс Arrays")) {
+                editMessageText.setText("Класс Arrays");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Класс Arrays.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Массивы")) {
+                editMessageText.setText("Практическая работа про Массивы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Массивы.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("списки")) {
+                editMessageText.setText("Списки");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Списки.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Списки")) {
+                editMessageText.setText("Практическая работа по Спискам");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Списки   List.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("коллекции Set, Map")) {
                 editMessageText.setText("Коллекции Set, Map");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleEleven);
+            } else if (data.equals("коллекция HashSet")) {
+                editMessageText.setText("Коллекция HashSet");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Коллекция HashSet.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("м р HashSet")) {
+                editMessageText.setText("Механизм работы HashSet");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Механизм работы HashSet.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("коллекция TreeSet")) {
+                editMessageText.setText("Коллекция TreeSet");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Коллекция TreeSet.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("к-ч деревья")) {
+                editMessageText.setText("Красно-черные деревья");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Красно-черные деревья.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Множества Set")) {
+                editMessageText.setText("Практическая работа");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа Множества Set.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("к HashMap и TreeMap")) {
+                editMessageText.setText("Коллекции HashMap и TreeMap");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Коллекции HashMap и TreeMap.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Map")) {
+                editMessageText.setText("Практическая работа по Map");
+                try {
+
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Map.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("c i Collections")) {
                 editMessageText.setText("Comparator iterator Collections");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwelve);
