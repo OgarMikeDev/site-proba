@@ -2439,7 +2439,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Массивы")) {
-                editMessageText.setText("Практическая работа про Массивы");
+                editMessageText.setText("Практическая работа. Массивы");
                 try {
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Массивы.docx");
 
@@ -2458,7 +2458,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Списки")) {
-                editMessageText.setText("Практическая работа по Спискам");
+                editMessageText.setText("Практическая работа. Списки List");
                 try {
 
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Списки   List.docx");
@@ -2505,7 +2505,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Множества Set")) {
-                editMessageText.setText("Практическая работа");
+                editMessageText.setText("Практическая работа Множества Set");
                 try {
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа Множества Set.docx");
 
@@ -2523,7 +2523,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Map")) {
-                editMessageText.setText("Практическая работа по Map");
+                editMessageText.setText("Практическая работа. Map");
                 try {
 
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Map.docx");
@@ -2570,7 +2570,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Поиск в коллекциях")) {
-                editMessageText.setText("Практическая работа");
+                editMessageText.setText("Практическая работа. Поиск в коллекциях");
                 try {
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Поиск в коллекциях.docx");
 
@@ -2625,7 +2625,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по Наследование")) {
-                    editMessageText.setText("Практическая работа");
+                    editMessageText.setText("Практическая работа. Наследование");
                     try {
                         SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Наследование.docx");
 
@@ -2689,7 +2689,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по А к и интерфейсы")) {
-                editMessageText.setText("Практическая работа");
+                editMessageText.setText("Практическая работа. Абстрактные классы и интерфейсы");
                 try {
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Абстрактные классы и интерфейсы.docx");
 
@@ -2826,7 +2826,7 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по ф и. Часть 1")) {
-                editMessageText.setText("Практическая работа");
+                editMessageText.setText("Практическая работа. Функциональное программирование в Java. Часть 1");
                 try {
                     SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Функциональное программирование в Java. Часть 1.docx");
 
