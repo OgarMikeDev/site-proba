@@ -464,7 +464,7 @@ public class Bot extends TelegramLongPollingBot {
             .build();
     public InlineKeyboardButton choiceSuitableCollection = InlineKeyboardButton.builder()
             .text("Выбор подходящей коллекции")
-            .callbackData("Выбор п к")
+            .callbackData("выбор п к")
             .build();
 
     public InlineKeyboardButton transformationArraysAndCollections = InlineKeyboardButton.builder()
@@ -491,7 +491,6 @@ public class Bot extends TelegramLongPollingBot {
             .text("Наследование классов Java")
             .callbackData("наследование классов Java")
             .build();
-
     public InlineKeyboardButton redefinitionMethods = InlineKeyboardButton.builder()
             .text("Переопределение методов")
             .callbackData("переопределение методов")
@@ -2536,18 +2535,305 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("c i Collections")) {
                 editMessageText.setText("Comparator iterator Collections");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwelve);
+            } else if (data.equals("выбор п к")) {
+                editMessageText.setText("Выбор подходящей коллекции");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Выбор подходящей коллекции.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("преобразование м и к")) {
+                editMessageText.setText("Преобразование массивов и коллекций");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Преобразование массивов и коллекций.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("итератор")) {
+                editMessageText.setText("Итератор");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Итератор.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("класс Collections")) {
+                editMessageText.setText("Класс Collections");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Класс Collections.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Поиск в коллекциях")) {
+                editMessageText.setText("Практическая работа");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Поиск в коллекциях.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("наследование")) {
                 editMessageText.setText("Наследование");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleThirteen);
+            } else if (data.equals("наследование классов Java")) {
+                editMessageText.setText("Наследование классов Java");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Наследование классов Java.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("переопределение методов")) {
+                editMessageText.setText("Переопределение методов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Переопределение методов.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("переопределение с методов")) {
+                editMessageText.setText("Переопределение статических методов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Переопределение статических методов.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("класс Object")) {
+                editMessageText.setText("Класс Object");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Класс Objec.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("модификаторы доступа")) {
+                editMessageText.setText("Модификаторы доступа");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конспект. Модификаторы доступа.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по Наследование")) {
+                    editMessageText.setText("Практическая работа");
+                    try {
+                        SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Наследование.docx");
+
+                        execute(sendDocument);
+                    } catch (Exception ex) {
+                        System.out.println(ex.getMessage());
+                    }
             } else if (data.equals("абстрактные классы и интерфейсы")) {
                 editMessageText.setText("Абстрактные классы и интерфейсы");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleFourteen);
+            } else if (data.equals("абстрактные классы")) {
+                editMessageText.setText("Абстрактные классы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("интерфейсы")) {
+                editMessageText.setText("Интерфейсы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("интерфейсы в языке Java")) {
+                editMessageText.setText("интерфейсы в языке Java");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("методы с д р в и")) {
+                editMessageText.setText("Методы с дефолтной реализацией в интерфейсах");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Методы с дефолтной реализацией в интерфейсах.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("полиморфизм")) {
+                editMessageText.setText("Полиморфизм");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("вложенные классы")) {
+                editMessageText.setText("Вложенные классы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Вложенные классы.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по А к и интерфейсы")) {
+                editMessageText.setText("Практическая работа");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Абстрактные классы и интерфейсы.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("deployment")) {
                 editMessageText.setText("Deployment");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleFifteen);
+            } else if (data.equals("maven")) {
+                editMessageText.setText("Maven");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("к Maven. Плагины")) {
+                editMessageText.setText("Команды Maven. Плагины");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("система автоматической сборки Gradle")) {
+                editMessageText.setText("Система автоматической сборки Gradle");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("установка с Gradle")) {
+                editMessageText.setText("Установка системы Gradle");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("р с Gradle в I I")) {
+                editMessageText.setText("Работа с Gradle в IntelliJ IDEA");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("docker")) {
+                editMessageText.setText("Docker");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("г д Javadoc")) {
+                editMessageText.setText("Генерация документации Javadoc");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("итоги пройденных тем")) {
+                editMessageText.setText("Итоги пройденных тем");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Итоги пройденных тем.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("ф п в Java.ч.1")) {
                 editMessageText.setText("Функциональное програмирование в Java. Ч. 1");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleSixteen);
+            } else if (data.equals("дженерики")) {
+                editMessageText.setText("Дженерики");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Дженерики.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("ф и. Часть 1")) {
+                editMessageText.setText("Функциональные интерфейсы. Часть 1");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Функциональные интерфейсы.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("лямбда-выражения")) {
+                editMessageText.setText("Лямбда-выражения");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Лямбда-выражения.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("класс Optional")) {
+                editMessageText.setText("Класс Optional");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Класс Optional.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("аннотации")) {
+                editMessageText.setText("Аннотации");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Аннотации.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("lombok")) {
+                editMessageText.setText("Lombok");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Lombok.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по ф и. Часть 1")) {
+                editMessageText.setText("Практическая работа");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Функциональное программирование в Java. Часть 1.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("ф п в Java.ч.2.Stream API")) {
                 editMessageText.setText("Функциональное програмирование в Java. Ч. 2. Stream API");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleSeventeen);
