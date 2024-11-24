@@ -2896,7 +2896,7 @@ public class Bot extends TelegramLongPollingBot {
                 editMessageText.setText("Работа с файлами и сетью");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleNineteen);
             } else if (data.equals("работа с MySQL в Java")) {
-                editMessageText.setText("Работа с MySQL в Java");
+                editMessageText.setText("Работа с MySQL в Java");//
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwenty);
             } else if (data.equals("протокол HTTP")) {
                 editMessageText.setText("Протокол HTTP");
