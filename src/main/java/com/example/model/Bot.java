@@ -643,7 +643,7 @@ public class Bot extends TelegramLongPollingBot {
             .build();
     public InlineKeyboardButton parallelReduceCombinationOperators = InlineKeyboardButton.builder()
             .text("Parallel, reduce и комбинирование операторов")
-            .callbackData("P, r и к операторов")
+            .callbackData("p, r и к операторов")
             .build();
     public InlineKeyboardButton practiceWorkModuleSeventeen = InlineKeyboardButton.builder()
             .text("Практическая работа")
@@ -1445,7 +1445,7 @@ public class Bot extends TelegramLongPollingBot {
 //                    FileOutputStream fileOutputStream = new FileOutputStream("Условные операторы “if”и “else”(get DB).pdf");
 //                    fileOutputStream.write(getMaterialForCourse.getFileData());
 
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Условные операторы “if”и “else”(get DB).pdf");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Условные операторы  if и  else (get DB).pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2639,7 +2639,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("абстрактные классы")) {
                 editMessageText.setText("Абстрактные классы");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Абстрактные классы.docx");
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -2647,7 +2647,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("интерфейсы")) {
                 editMessageText.setText("Интерфейсы");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Интерфейсы.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2656,7 +2656,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("интерфейсы в языке Java")) {
                 editMessageText.setText("интерфейсы в языке Java");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Интерфейсы в языке Java.docx");
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -2673,7 +2673,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("полиморфизм")) {
                 editMessageText.setText("Полиморфизм");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Полиморфизм.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2703,7 +2703,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("maven")) {
                 editMessageText.setText("Maven");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Maven.pdf");
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -2711,7 +2711,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("к Maven. Плагины")) {
                 editMessageText.setText("Команды Maven. Плагины");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Команды Maven. Плагины.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2720,7 +2720,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("система автоматической сборки Gradle")) {
                 editMessageText.setText("Система автоматической сборки Gradle");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Система автоматической сборки Gradle.docx");
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -2728,7 +2728,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("установка с Gradle")) {
                 editMessageText.setText("Установка системы Gradle");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Установка системы Gradle.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2737,7 +2737,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("р с Gradle в I I")) {
                 editMessageText.setText("Работа с Gradle в IntelliJ IDEA");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Работа с Gradle в IntelliJ IDEA.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2746,7 +2746,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("docker")) {
                 editMessageText.setText("Docker");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Docker.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2755,7 +2755,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("г д Javadoc")) {
                 editMessageText.setText("Генерация документации Javadoc");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Генерация документации Javadoc.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2837,6 +2837,58 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("ф п в Java.ч.2.Stream API")) {
                 editMessageText.setText("Функциональное програмирование в Java. Ч. 2. Stream API");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleSeventeen);
+            } else if (data.equals("в в Stream API")) {
+                editMessageText.setText("Введение в Stream API");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Введение в Stream AP.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("создание Stream")) {
+                editMessageText.setText("Создание Stream");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Создание Stream.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("промежуточные операторы")) {
+                editMessageText.setText("Промежуточные операторы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Промежуточные операторы.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("терминальные операторы")) {
+                editMessageText.setText("Терминальные операторы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Терминальные операторы.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("p, r и к операторов")) {
+                editMessageText.setText("Parallel, reduce и комбинирование операторов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Parallel, reduce и комбинирование операторов.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по ф и. Ч 2. S API")) {
+                editMessageText.setText("Практическая работа. Функциональное програмирование в Java. Ч. 2. Stream API");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Функциональное программирование в Java. Часть 2. Stream API.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("исключение, отладка и логирование")) {
                 editMessageText.setText("Исключение, отладка и логирование");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleEighteen);
