@@ -862,11 +862,11 @@ public class Bot extends TelegramLongPollingBot {
             .build();
     public InlineKeyboardButton practiceWorkModuleTwentyTwoNumberOne = InlineKeyboardButton.builder()
             .text("Практическая работа №1")
-            .callbackData("практическая работа №1")
+            .callbackData("практическая работа №1 р в прл. Ч. 1")
             .build();
     public InlineKeyboardButton practiceWorkModuleTwentyTwoNumberTwo = InlineKeyboardButton.builder()
             .text("Практическая работа №2")
-            .callbackData("практическая работа №2")
+            .callbackData("практическая работа №2 р в прл. Ч. 1")
             .build();
     public InlineKeyboardButton moduleTwentyThree = InlineKeyboardButton.builder()
             .text("Разработка веб-приложения. Ч. 2")
@@ -2892,21 +2892,514 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("исключение, отладка и логирование")) {
                 editMessageText.setText("Исключение, отладка и логирование");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleEighteen);
+            } else if (data.equals("что такое и и з они нужны")) {
+                editMessageText.setText("Что такое исключения и зачем они нужны");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Что такое исключения и зачем они нужны.pdf");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("типы исключений")) {
+                editMessageText.setText("Типы исключений");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Типы исключений.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("обработка исключений")) {
+                editMessageText.setText("Обработка исключений");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("с с исключений")) {
+                editMessageText.setText("Создание собственных исключений");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Создание собственных исключений.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("отладка приложений")) {
+                editMessageText.setText("Отладка приложений");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Отладка приложений.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("логирование")) {
+                editMessageText.setText("Логирование");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Логирование.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по и, о и л")) {
+                editMessageText.setText("Практическая работа. Исключения, отладка и логирование");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа.  Исключения, отладка и логирование.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("работа с файлами и сетью")) {
                 editMessageText.setText("Работа с файлами и сетью");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleNineteen);
+            } else if (data.equals("класс File")) {
+                editMessageText.setText("Класс File");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("ч ф с п FileInputStream")) {
+                editMessageText.setText("Чтение файлов с помощью FileInputStream");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("ч ф с п BufferedReader")) {
+                editMessageText.setText("Чтение файлов с помощью BufferedReader");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("ч ф с п класса Files")) {
+                editMessageText.setText("Чтение файлов с помощью класса Files");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("запись в файл")) {
+                editMessageText.setText("Запись в файл");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("java NIO API")) {
+                editMessageText.setText("Java NIO API");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Java NIO API.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("табличные файлы")) {
+                editMessageText.setText("Табличные файлы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("с XML и HTML-ф")) {
+                editMessageText.setText("Структура XML и HTML-файлов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п HTML-файлов")) {
+                editMessageText.setText("Парсинг HTML-файлов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("ф JSON и п JSON ф")) {
+                editMessageText.setText("Формат JSON и парсинг JSON файлов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("формат JSON")) {
+                editMessageText.setText("Формат JSON");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("конфигурационные файлы")) {
+                editMessageText.setText("Конфигурационные файлы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п Р по р с ф и с")) {
+                editMessageText.setText("конфигурационные файлыконфигурационные файлы");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("работа с MySQL в Java")) {
-                editMessageText.setText("Работа с MySQL в Java");//
+                editMessageText.setText("Работа с MySQL в Java");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwenty);
+            } else if (data.equals("установка MySQL")) {
+                editMessageText.setText("установка MySQL");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("подключение через JDBC")) {
+                editMessageText.setText("Подключение через JDBC");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("запросы без ResultSet")) {
+                editMessageText.setText("Запросы без ResultSet");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("hibernate — п и н")) {
+                editMessageText.setText("Hibernate — подключение и настройка");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("hibernate: изменение д в базе")) {
+                editMessageText.setText("Hibernate: изменение данных в базе");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("с ManyToOne и OneToMany")) {
+                editMessageText.setText("Связи ManyToOne и OneToMany");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("связь ManyToMany")) {
+                editMessageText.setText("связь ManyToMany");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("hibernate query builder")) {
+                editMessageText.setText("hibernate query builderв");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("ленивая загрузка данных")) {
+                editMessageText.setText("Ленивая загрузка данных");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("where и OrderBy")) {
+                editMessageText.setText("Where и OrderBy");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("hql")) {
+                editMessageText.setText("HQL");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("практическая работа №1")) {
+                editMessageText.setText("Практическая работа №1");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("практическая работа №2")) {
+                editMessageText.setText("Практическая работа №2");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("протокол HTTP")) {
                 editMessageText.setText("Протокол HTTP");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwentyOne);
+            } else if (data.equals("п HTTP. З и о")) {
+                editMessageText.setText("Протокол HTTP. Запрос и ответ");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("м HTTP-з GET и POST")) {
+                editMessageText.setText("Методы HTTP-запросов GET и POST");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("д методы HTTP-запросов")) {
+                editMessageText.setText("Другие методы HTTP-запросов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("статус-коды HTTP-ответов")) {
+                editMessageText.setText("Статус-коды HTTP-ответов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("а сетевых ресурсов")) {
+                editMessageText.setText("Адресация сетевых ресурсов");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("rest: теория и практика")) {
+                editMessageText.setText("REST: теория и практика");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "RESTтеория и практика.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("http-заголовки")) {
+                editMessageText.setText("HTTP-заголовки");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("в п HTTP и HTTPS")) {
+                editMessageText.setText("Версии протокола HTTP и HTTPS");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("разработка веб-приложения. Ч. 1")) {
                 editMessageText.setText("Разработка веб-приложения. Ч. 1");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwentyTwo);
+            } else if (data.equals("з с ф Spring")) {
+                editMessageText.setText("Знакомство с фреймворком Spring");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Знакомство с фреймворком Spring.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("i of c и d Injection")) {
+                editMessageText.setText("Inversion of Control и Dependency Injection");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Inversion of Control и Dependency Injection.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("bean и его ж ц")) {
+                editMessageText.setText("Bean и его жизненный цикл");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Bean и его жизненный цикл.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("@Controller и @RestController")) {
+                editMessageText.setText("Контроллеры. Аннотации @Controller и @RestController");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Контроллеры. Аннотации @Controller и @RestController.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("с. А @Service")) {
+                editMessageText.setText("Сервисы. Аннотация @Service");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Сервисы. Аннотация @Service.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("конфигурация Spring-приложений")) {
+                editMessageText.setText("Конфигурация Spring-приложений");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конфигурация Spring-приложений.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("практическая работа №1 р в прл. Ч. 1")) {
+                editMessageText.setText("Практическая работа №1. Разработка веб-приложений Ч. 1");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Разработка веб-приложений. Часть 1.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("практическая работа №2 р в прл. Ч. 2")) {
+                editMessageText.setText("Практическая работа №2. Разработка веб-приложений Ч. 1 ");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             } else if (data.equals("разработка веб-приложения. Ч. 2")) {
                 editMessageText.setText("Разработка веб-приложения. Ч. 2");
                 editMessageReplyMarkup.setReplyMarkup(sendModuleTwentyThree);
+            } else if (data.equals("р с б д. Spring Data JPA")) {
+                editMessageText.setText("Работа с базой данных. Spring Data JPA");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Работа с базой данных. Spring Data JPA.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п к базе данных")) {
+                editMessageText.setText("Подключение к базе данных");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Подключение к базе данных.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("сущности и репозитории")) {
+                editMessageText.setText("Сущности и репозитории");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Сущности и репозитории.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("с между сущностями")) {
+                editMessageText.setText("Связи между сущностями");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Связи между сущностями.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("в баз данных. Liquibase")) {
+                editMessageText.setText("Версионирование баз данных. Liquibase");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Версионирование баз данных. Liquibase.pdf");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
+            } else if (data.equals("п р по Р веб-приложения. Ч. 2")) {
+                editMessageText.setText("Практическая работа №2.  Разработка веб-приложений.");
+                try {
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Разработка веб-приложений. Часть 2.docx");
+
+                    execute(sendDocument);
+                } catch (Exception ex) {
+                    System.out.println(ex.getMessage());
+                }
             }
 
             //Последняя кнопка для сохранения всех данных в БД
