@@ -2912,7 +2912,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("обработка исключений")) {
                 editMessageText.setText("Обработка исключений");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Обработка исключений.docx");
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
@@ -2959,7 +2959,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("класс File")) {
                 editMessageText.setText("Класс File");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Класс File.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2968,7 +2968,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("ч ф с п FileInputStream")) {
                 editMessageText.setText("Чтение файлов с помощью FileInputStream");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Чтение файлов с помощью FileInputStream.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2977,7 +2977,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("ч ф с п BufferedReader")) {
                 editMessageText.setText("Чтение файлов с помощью BufferedReader");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Чтение файлов с помощью BufferedReader.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2986,7 +2986,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("ч ф с п класса Files")) {
                 editMessageText.setText("Чтение файлов с помощью класса Files");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Чтение файлов с помощью класса Files.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -2995,7 +2995,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("запись в файл")) {
                 editMessageText.setText("Запись в файл");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Запись в файл.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3013,7 +3013,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("табличные файлы")) {
                 editMessageText.setText("Табличные файлы");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Табличные файлы.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3022,7 +3022,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("с XML и HTML-ф")) {
                 editMessageText.setText("Структура XML и HTML-файлов");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Структура XML и HTML-файлов.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3031,7 +3031,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("п HTML-файлов")) {
                 editMessageText.setText("Парсинг HTML-файлов");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Парсинг HTML-файлов.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3040,7 +3040,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("ф JSON и п JSON ф")) {
                 editMessageText.setText("Формат JSON и парсинг JSON файлов");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Формат JSON и парсинг JSON файлов.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3049,7 +3049,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("формат JSON")) {
                 editMessageText.setText("Формат JSON");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Формат JSON.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3058,16 +3058,16 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("конфигурационные файлы")) {
                 editMessageText.setText("Конфигурационные файлы");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Конфигурационные файлы.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("п Р по р с ф и с")) {
-                editMessageText.setText("конфигурационные файлыконфигурационные файлы");
+                editMessageText.setText("Практическая работа. Работа с файлами и сетью");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа. Работа с файлами и сетью.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3079,7 +3079,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("установка MySQL")) {
                 editMessageText.setText("установка MySQL");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Установка MySQL.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3088,7 +3088,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("подключение через JDBC")) {
                 editMessageText.setText("Подключение через JDBC");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Подключение через JDBC.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3097,7 +3097,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("запросы без ResultSet")) {
                 editMessageText.setText("Запросы без ResultSet");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Запросы без ResultSet.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3106,7 +3106,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("hibernate — п и н")) {
                 editMessageText.setText("Hibernate — подключение и настройка");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "hibernate.cfg");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3115,7 +3115,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("hibernate: изменение д в базе")) {
                 editMessageText.setText("Hibernate: изменение данных в базе");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Hibernate_ изменение данных в базе.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3124,7 +3124,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("с ManyToOne и OneToMany")) {
                 editMessageText.setText("Связи ManyToOne и OneToMany");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Связи ManyToOne и OneToMany.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3133,7 +3133,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("связь ManyToMany")) {
                 editMessageText.setText("связь ManyToMany");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Связь ManyToMany.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3142,7 +3142,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("hibernate query builder")) {
                 editMessageText.setText("hibernate query builderв");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Hibernate query builder.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3151,7 +3151,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("ленивая загрузка данных")) {
                 editMessageText.setText("Ленивая загрузка данных");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Ленивая загрузка данных.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3160,7 +3160,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("where и OrderBy")) {
                 editMessageText.setText("Where и OrderBy");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Where и OrderBy.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3169,25 +3169,25 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("hql")) {
                 editMessageText.setText("HQL");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "HQL.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("практическая работа №1")) {
-                editMessageText.setText("Практическая работа №1");
+                editMessageText.setText("Практическая работа №1.  Работа с MySQL в Java");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа №1.  Работа с MySQL в Java.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("практическая работа №2")) {
-                editMessageText.setText("Практическая работа №2");
+                editMessageText.setText("Практическая работа №2.  Работа с MySQL в Java");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа №2.  Работа с MySQL в Java.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3199,7 +3199,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("п HTTP. З и о")) {
                 editMessageText.setText("Протокол HTTP. Запрос и ответ");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Запрос и ответ.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3208,7 +3208,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("м HTTP-з GET и POST")) {
                 editMessageText.setText("Методы HTTP-запросов GET и POST");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Методы HTTP-запросов GET и POST.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3217,7 +3217,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("д методы HTTP-запросов")) {
                 editMessageText.setText("Другие методы HTTP-запросов");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Другие методы HTTP-запросов.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3226,7 +3226,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("статус-коды HTTP-ответов")) {
                 editMessageText.setText("Статус-коды HTTP-ответов");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Статус-коды HTTP-ответов.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3235,7 +3235,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("а сетевых ресурсов")) {
                 editMessageText.setText("Адресация сетевых ресурсов");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Адресация сетевых ресурсов.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3253,7 +3253,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("http-заголовки")) {
                 editMessageText.setText("HTTP-заголовки");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "HTTP-заголовки.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3262,7 +3262,7 @@ public class Bot extends TelegramLongPollingBot {
             } else if (data.equals("в п HTTP и HTTPS")) {
                 editMessageText.setText("Версии протокола HTTP и HTTPS");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Версии протокола HTTP и HTTPS.pdf");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
@@ -3335,9 +3335,9 @@ public class Bot extends TelegramLongPollingBot {
                     System.out.println(ex.getMessage());
                 }
             } else if (data.equals("практическая работа №2 р в прл. Ч. 2")) {
-                editMessageText.setText("Практическая работа №2. Разработка веб-приложений Ч. 1 ");
+                editMessageText.setText("Практическая работа №2. Разработка веб-приложений Ч. 2 ");
                 try {
-                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "-");
+                    SendDocument sendDocument = serviceBotImages.createSendDocument(idUser, "Практическая работа №2. Разработка веб-приложений Ч. 2.docx");
 
                     execute(sendDocument);
                 } catch (Exception ex) {
