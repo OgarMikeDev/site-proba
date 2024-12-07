@@ -866,7 +866,7 @@ public class Bot extends TelegramLongPollingBot {
             .build();
     public InlineKeyboardButton practiceWorkModuleTwentyTwoNumberTwo = InlineKeyboardButton.builder()
             .text("Практическая работа №2")
-            .callbackData("практическая работа №2 р в прл. Ч. 1")
+            .callbackData("практическая работа №2 р в прл. Ч. 2")
             .build();
     public InlineKeyboardButton moduleTwentyThree = InlineKeyboardButton.builder()
             .text("Разработка веб-приложения. Ч. 2")
